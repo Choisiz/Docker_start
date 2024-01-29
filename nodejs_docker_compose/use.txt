@@ -1,0 +1,9 @@
+1. npm init
+2. package.json 수정
+   -"main": "server.js",
+   "start": "node server.js",
+
+설명
+ -redis란: 메모리기반에 키-값 구조 데이터관리서비스
+          모든 데이터를 메모리에 저장하기 때문에 빠름
+          메모리에 저장하지만 영속적으로 저장가능 
