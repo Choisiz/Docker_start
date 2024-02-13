@@ -15,7 +15,7 @@ jobs:
     - run: docker run -e CI=true choisiz/react-test npm test
 
     - name: Generate deployment package
-      run: cd react_docker && zip -r deploy.zip . -x '*.git*'
+      run: zip -r deploy.zip . -x '*.git*'
 
     - name : Deploy to EB
       uses: choisiz/react-test
