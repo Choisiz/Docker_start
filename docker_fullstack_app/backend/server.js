@@ -6,6 +6,7 @@ const app = express();
 
 app.use(bodyParser.json());
 
+//table create
 db.pool.query(
   `CREATE TABLE lists(
     id INTEGER AUTO_INCREMENT,
@@ -16,6 +17,7 @@ db.pool.query(
     console.log("result", result);
   }
 );
+
 //db -> front
 app.get("/api/values", (req, res) => {
   db.pool.query("SELECT * FROM lists;", (err, results, fileds) => {
