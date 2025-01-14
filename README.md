@@ -41,9 +41,16 @@
   - ex) 실행: docker run -it choisis/hello
 
 - docker-compose up: 이미지없을때, 이미지 빌드후 컨테이너 시작
+  <<<<<<< HEAD
 - docker-compose up --build: 이미지 유무상관없이, 이미지 빌드후 컨테이너 시작
 
 ## 도커이미지생성
+
+=======
+
+- docker-compose up --build: 이미지 유무상관없이, 이미지 빌드후 컨테이너 시작,수정시 보통이것사용
+- docker-compose down: 도커컴포즈를 통해 동작시간 컨테이너들을 중지
+  도커이미지생성
 
 1. 도커파일을 작성한다.
 2. 도커클라이언트에게 도커파일을 전달한다. ex) docker build -t <원하는 이미지 이름> .
