@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
   client.get("number", (err, number) => {
     //res.send("숫자1업합니다.", number);
     client.set("number", parseInt(number) + 1);
-    res.status(200).send("숫자+1up:" + number);
+    res.status(200).send("숫자추가+1up:" + number);
   });
 });
 
